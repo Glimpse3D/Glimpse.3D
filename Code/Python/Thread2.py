@@ -89,3 +89,4 @@ with picamera.PiCamera() as camera:
 	out_points = points[mask]
 	out_colors = colors[mask]
 
+	return {'point':out_points, 'color':out_colors}
