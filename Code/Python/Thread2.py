@@ -65,6 +65,7 @@ with picamera.PiCamera() as camera:
 	time.sleep(0.1) #camera initialization
 	camera.capture(rawCapture, format="bgr")
 	image1 = rawCapture.array
+	cam_change()
 
 	time.sleep(0.1) #camera initialization
 	camera.capture(rawCapture, format="bgr")
